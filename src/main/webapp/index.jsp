@@ -18,5 +18,7 @@
     内容：<input type="text" name="neirong"/><br/>
     <input type="submit" value="完成"/>
 </form>
+<h2>作业3:</h2>
+<a href="${pageContext.request.contextPath}/zuoye3/login.jsp">Go</a><br>
 </body>
 </html>
