@@ -1,6 +1,6 @@
 # J2EEHomeWork
 ## J2EE课堂作业-首页
-![index](https://github.com/zhangjin1017/J2EEHomeWork/blob/master/img-jianjie/index.jpg)
+![index](img-jianjie/index.jpg)
 ### 作业1：显示当前时间
 ![zuoye1-date](img-jianjie/zuoye1-date.jpg)
 ### 作业2：生成表格
