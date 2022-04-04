@@ -9,18 +9,33 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>作业4</title>
+    <title>作业4_5</title>
 </head>
 <body>
 <%int i=0;%>
+<h2>中国各大海洋大学</h2>
+<ol>
+    <c:forTokens items="${sessionScope.schools}" delims="," var="school">
+        <li
+            <c:if test="${school.equals('中国海洋大学')}">style="color:red"</c:if>
+        >
+                ${school}
+        </li>
+    </c:forTokens>
+</ol>
 <table border="1">
     <tr>
+        <th>序号</th>
         <th>分数</th>
         <th>等第</th>
     </tr>
     <tr>
-    <c:forEach items="${sessionScope.scoreList}" var="score">
-    <tr>
+    <c:forEach items="${sessionScope.scoreList}" var="score" varStatus="st">
+    <tr
+        <c:if test="${st.count%2==0}">style="background-color:grey"</c:if>
+        <c:if test="${st.count%2==1}">style="background-color:darkseagreen"</c:if>
+    >
+        <td><c:out value="${st.index}"/></td>
         <td><c:out value="${score}"/></td>
         <c:choose>
             <c:when test="${score>=90}"><td>优秀</td></c:when>
@@ -30,6 +45,8 @@
         </c:choose>
     </tr>
     </c:forEach>
+
+
 </table>
 
 </body>
