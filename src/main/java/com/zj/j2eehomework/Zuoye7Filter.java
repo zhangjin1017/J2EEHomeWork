@@ -8,6 +8,7 @@ import java.io.IOException;
 public class Zuoye7Filter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
+        System.out.println("-----------------Zuoye7Filter doFilter--------------------");
         double probability=Math.random();
         System.out.println(probability);
         if(probability>0.5){
@@ -16,5 +17,10 @@ public class Zuoye7Filter implements Filter {
             request.setAttribute("msg","你运气不好，访问失败了");
             request.getRequestDispatcher("/error.jsp").forward(request, response);
         }
+    }
+
+    @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+        System.out.println("-----------------Zuoye7Filter init--------------------");
     }
 }
