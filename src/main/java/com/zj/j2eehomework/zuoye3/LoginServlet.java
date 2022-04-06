@@ -1,4 +1,4 @@
-package com.zj.zuoye3;
+package com.zj.j2eehomework.zuoye3;
 
 import com.zj.commons.CommonUtils;
 import javax.servlet.ServletException;
@@ -56,6 +56,6 @@ public class LoginServlet extends HttpServlet {
             return;
         }
         request.getSession().setAttribute("userSession",form);
-        response.sendRedirect(request.getContextPath()+"/zuoye3/welcome.jsp");
+        response.sendRedirect(request.getContextPath()+"/zuoye3/index.jsp");
     }
 }

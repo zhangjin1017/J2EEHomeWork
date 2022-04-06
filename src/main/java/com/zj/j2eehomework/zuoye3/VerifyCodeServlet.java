@@ -1,4 +1,4 @@
-package com.zj.zuoye3;
+package com.zj.j2eehomework.zuoye3;
 
 import com.zj.commons.VerifyCode;
 

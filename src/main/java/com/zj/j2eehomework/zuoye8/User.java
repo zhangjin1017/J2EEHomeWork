@@ -1,4 +1,4 @@
-package com.zj.zuoye3;
+package com.zj.j2eehomework.zuoye8;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    private String username;
-    private String password;
-    private String verifyCode;
+    String ucode;
+    String password;
 }

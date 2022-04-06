@@ -19,12 +19,14 @@
     <input type="submit" value="完成"/>
 </form>
 <h2>作业3:</h2>
-<a href="${pageContext.request.contextPath}/zuoye3/login.jsp">Go</a><br>
+<a href="zuoye3/login.jsp">Go</a><br>
 <h2>作业4_5:</h2>
 <a href="Zuoye4_5">Go</a><br>
 <h2>作业6:</h2>
 <a href="Zuoye6">Go</a><br>
 <h2>作业7:</h2>
 <a href="hello.jsp">Go</a><br>
+<h2>作业8:</h2>
+<a href="zuoye8/login.jsp">Go</a><br>
 </body>
 </html>
