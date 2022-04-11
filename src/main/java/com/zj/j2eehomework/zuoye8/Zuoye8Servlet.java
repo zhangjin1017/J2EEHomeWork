@@ -19,6 +19,7 @@ public class Zuoye8Servlet extends HttpServlet {
             user.setUcode(ucode);
             user.setPassword(password);
             request.getSession().setAttribute("user",user);
+
             //重定向
             response.sendRedirect(request.getContextPath()+"/zuoye8/index.jsp");
         }else{
