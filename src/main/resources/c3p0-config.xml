@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="driverClass">com.mysql.cj.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/j2eestudentmanagement?useUnicode=true&amp;characterEncoding=UTF-8&amp;serverTimezone=UTC&amp;nullCatalogMeansCurrent=true</property>
+		<property name="user">root</property>
+		<property name="password">zj1017</property>
+		<property name="initialPoolSize">10</property>
+		<property name="acquireIncrement">3</property>
+		<property name="maxPoolSize">10</property>
+		<property name="minPoolSize">3</property>
+	</default-config>
+</c3p0-config>
